@@ -1,0 +1,31 @@
+  // Log files to upload to Scalyr.
+    logs: [
+        {
+            path: "/usr/local/apache/logs/access_log",
+            attributes: {parser: "accessLog"}
+        },
+        {
+            path: "/usr/local/apache/logs/error_log",
+            attributes: {parser: "systemLog"}
+        },
+        {
+            path: "/usr/local/tomcat/logs/catalina.out",
+            attributes: {parser: "systemLog"}
+        },
+        {
+            path: "/usr/local/tomcat/logs/eonlineapp.log",
+            attributes: {parser: "accessLog"}
+        },
+        {
+            path: "/usr/local/tomcat/logs/localhost.*.log",
+            attributes: {parser: "accessLog"}
+        },
+        {
+            path: "/usr/local/tomcat/logs/localhost_access_log.*.txt",
+            attributes: {parser: "accessLog"}
+        }
+
+    ],
+    monitors: [
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    api_key: "<%= @api_key%>",
+    server_attributes: {
+        serverHost: "<%= @node_fqdn %>", 
+        tier: "production"
+}
+
+<%= render "node_log.json.erb", cookbook: 'apache' %>
